@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <style>
+           body { 
+               background-color:aquamarine;
+               font-family:Georgia, 'Times New Roman', Times, serif
+           }   
+           h1{
+               color:azure
+               text-algin:burlywood
+        </style>
+    </head>
+    <body>
+        <h1> Bienvenidos a la lista de tareas</h1>
+        <h2> ACa van a ir las tareas </h2>
+        <p> Pepito es un dinosaurio,
+            esto no es una tarea</p>
+        <img src=" http://significadosdelossuenos.net/wp-content/uploads/2017/12/banar-bebe-recien-nacido-interdiario-1024x576.jpg" alt="">
+
+   
+        Hola me llamo {{ nombre }} y tengo {{ edad }} 
+    y mis hobbies son
+    {% for x in hobbies %}
+    <li> {{ x }} </li>
+    {% endfor %}
+    <p> Y mis tareas son:</p>
+    {% for tarea in lista_tareas %}
+      <li> {{tarea.titulo}}: {{ tarea.descripcion}} </li>
+    {% endfor %}
+
+
+    </body>
+</html>
